@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Task-10</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+		
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .container > div {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header, footer {
+                padding: 10px;
+                font-size: 14px;
+            }
+            .content {
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>My Responsive Webpage</h1>
+    </header>
+
+    
+    <div class="content">
+        <div class="container">
+            <div>
+                <h2>Section 1</h2>
+                <p>This is some content in section 1.</p>
+            </div>
+            <div>
+                <h2>Section 2</h2>
+                <p>This is some content in section 2.</p>
+            </div>
+            <div>
+                <h2>Section 3</h2>
+                <p>This is some content in section 3.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 Shankthenics. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
